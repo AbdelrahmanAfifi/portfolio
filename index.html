@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!--  header  -->
+    <section class="header" id="header">
+        <div id="nav-bar">
+            <div id="nav-left">
+                <a href="#">Abdoo<span id="info">.info</span></a>
+            </div>
+            <nav id="nav-right">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div> 
+    </section>
+
+    <!--  hero image  -->
+    <section id="hero-image">
+        <div id="hero-image">
+            <p id="textToCopy" style="display: none;">boodyafifi2015@gmail.com</p>
+            <button onclick="copyText()">Copy Email</button>
+        </div>
+    </section>
+
+    <!--  about  -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>My name is Abdelrahman and I am good at programming languages HTML,CSS and JS</p>
+    </section>
+
+    <!--  Projects card  -->
+    <section id="Projects">
+        <div class="Card">
+            <h3 class="Paragraph">Login&Register Pannel</h3>
+            <p class="Paragraph">It is a ready-to-use login pannel with simple changes</p>
+            <a href="https://abdelrahmanafifi.github.io/Login-Register-Form/" class="main-btn">View project</a>
+        </div>
+        <div class="Card">
+            <h3 class="Paragraph">Movie Project</h3>
+            <p class="Paragraph">It is an good design interface for a movie site</p>
+            <a href="https://abdelrahmanafifi.github.io/Movie_Project/" class="main-btn">View project</a>
+        </div>
+        <div class="Card">
+            <h3 class="Paragraph">Clothes Project</h3>
+            <p class="Paragraph">It is a ready-to-use clothing site with simple changes</p>
+            <a href="https://abdelrahmanafifi.github.io/Clothes_Project/" class="main-btn">View project</a>
+        </div>
+    </section>
+
+        <!--  contact  -->
+        <section id="contact" class="about" >
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!--  footer  -->
+        <footer>
+            <p>&copy; 2025 Abdoo.info. All rights reserved.</p>
+        </footer>
+
+
+
+    <script>
+        function copyText() {
+            let text = document.getElementById("textToCopy").innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("تم نسخ النص بنجاح!");
+            }).catch(err => {
+                alert("حدث خطأ أثناء النسخ: " + err);
+            });
+        }
+    </script>
+</body>
+</html>
