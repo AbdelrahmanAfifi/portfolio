@@ -259,4 +259,9 @@ footer {
     .Card {
         width: 30%;
     }
+    #hero-image button {
+        margin-top: 420px;
+        margin-left: 900px;
+    }
 }
+
